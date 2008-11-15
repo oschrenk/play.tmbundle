@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>properties</string>
+	</array>
+	<key>keyEquivalent</key>
+	<string>^~P</string>
+	<key>name</key>
+	<string>routes (Play!)</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.play</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>([#])(.+)?$\n?</string>
+			<key>name</key>
+			<string>comment.play</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.play.httpMethod</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>string</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>entity.action</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>^(GET|PUT|POST|DELETE|OPTION|HEAD|\*)\s+([^\s]+)\s+([a-zA-Z.0-9_]+)\s*$</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.routes.play</string>
+	<key>uuid</key>
+	<string>D14914CF-ED61-498E-BF80-3BEF3CD5DE7D</string>
+</dict>
+</plist>
