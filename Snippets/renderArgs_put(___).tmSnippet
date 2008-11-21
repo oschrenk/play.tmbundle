@@ -3,16 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>#{else}
-	$0
-#{/else}</string>
+	<string>renderArgs.put("$1", $2);$0</string>
 	<key>name</key>
-	<string>#{else}</string>
+	<string>renderArgs.put(...)</string>
 	<key>scope</key>
-	<string>text.html.play</string>
+	<string>source.java</string>
 	<key>tabTrigger</key>
-	<string>else</string>
+	<string>ra</string>
 	<key>uuid</key>
-	<string>29D8FD4A-C655-43C8-B3B8-CEC97357BE26</string>
+	<string>F4D3538F-FBF5-4678-8B35-FBEE4B09BACC</string>
 </dict>
 </plist>

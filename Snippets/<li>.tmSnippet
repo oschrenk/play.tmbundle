@@ -3,16 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>#{else}
-	$0
-#{/else}</string>
+	<string>&lt;li$1&gt;$0&lt;/li&gt;</string>
 	<key>name</key>
-	<string>#{else}</string>
+	<string>&lt;li&gt;</string>
 	<key>scope</key>
-	<string>text.html.play</string>
+	<string>text.html</string>
 	<key>tabTrigger</key>
-	<string>else</string>
+	<string>li</string>
 	<key>uuid</key>
-	<string>29D8FD4A-C655-43C8-B3B8-CEC97357BE26</string>
+	<string>73F742AD-A488-4C12-A9E2-134D0F46BA5B</string>
 </dict>
 </plist>
