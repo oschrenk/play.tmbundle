@@ -15,7 +15,7 @@
 	<key>scope</key>
 	<string>source.java</string>
 	<key>tabTrigger</key>
-	<string>c</string>
+	<string>class</string>
 	<key>uuid</key>
 	<string>6362CB9E-6849-45D2-A768-D96E96AD1F6D</string>
 </dict>

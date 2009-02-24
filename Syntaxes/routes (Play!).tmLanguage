@@ -13,6 +13,10 @@
 	<key>patterns</key>
 	<array>
 		<dict>
+			<key>include</key>
+			<string>#play</string>
+		</dict>
+		<dict>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
@@ -46,9 +50,99 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>^(GET|PUT|POST|DELETE|OPTION|HEAD|\*)\s+([^\s]+)\s+([a-zA-Z.0-9_]+)\s*$</string>
+			<string>^(GET|PUT|POST|DELETE|OPTION|HEAD|\*)\s+([^\s]+)\s+(.+)\s*$</string>
 		</dict>
 	</array>
+	<key>repository</key>
+	<dict>
+		<key>embedded-code</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#play</string>
+				</dict>
+			</array>
+		</dict>
+		<key>play</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>begin</key>
+					<string>\${</string>
+					<key>end</key>
+					<string>}</string>
+					<key>name</key>
+					<string>variable.other.play</string>
+				</dict>
+				<dict>
+					<key>begin</key>
+					<string>#{</string>
+					<key>end</key>
+					<string>}</string>
+					<key>name</key>
+					<string>support.function.play</string>
+				</dict>
+				<dict>
+					<key>begin</key>
+					<string>@{</string>
+					<key>end</key>
+					<string>}</string>
+					<key>name</key>
+					<string>keyword.control.play</string>
+				</dict>
+				<dict>
+					<key>begin</key>
+					<string>&amp;{</string>
+					<key>end</key>
+					<string>}</string>
+					<key>name</key>
+					<string>entity.i18n.play</string>
+				</dict>
+				<dict>
+					<key>begin</key>
+					<string>(%{)</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>support.function.play</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>(}%)</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>support.function.play</string>
+						</dict>
+					</dict>
+					<key>name</key>
+					<string>source.groovy.embedded.html.play</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>source.js</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>begin</key>
+					<string>\*{</string>
+					<key>end</key>
+					<string>}\*</string>
+					<key>name</key>
+					<string>comment.play</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
 	<key>scopeName</key>
 	<string>source.routes.play</string>
 	<key>uuid</key>
